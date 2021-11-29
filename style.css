@@ -1,0 +1,123 @@
+body { /*kogu lehekülje värv ja font*/
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper { /*ülemine osa jaoks stiil*/
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+.navigation { /*pildi jaoks*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.nav {/*stiil ja vahe tegemine "tule tööle" ja "menüü" jaoks*/
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.nav>li{
+    padding-left: 23px;
+    margin-left: 22px;
+    position: relative;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: black;
+}
+.banner {
+    background-color: #444;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+
+.title { /*pealkirjade jaoks*/
+    font-size: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.sidebar {
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+    max-width: 280px;
+    width: 400px;
+    height: 100%;
+    font-size: 20px;
+    flex-basis: 20%;
+    
+  }
+  
+  .sidebar a { 
+    font-weight: bolder;
+    display: flex;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-decoration: none;
+    
+  }
+  .sidebar a.active { /*valiku jaoks kui paned kursori*/
+    color: #D20101;
+  }
+  
+  .sidebar a:hover:not(.active) { /*aktiveeritud valiku jaoks*/
+    color: black;
+  }
+  
+  div.content {
+    padding: 1px 16px;
+    width: 100%;
+  }
+  .nav-wrapper{
+      display: flex;
+      flex-direction: row;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+.raam { /*raam ümber teksti*/
+    border: 2px solid #fff;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    width: 100%;
+    
+}
+.body, h3{ /*kolmanda astme pealkirja jaoks*/
+    text-transform: uppercase;
+}
+.body, p{
+    font-weight: bolder;
+}
