@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="est">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menüü</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!--stiilide jaoks link-->
+    <link rel="stylesheet" href="css/style.css"> <!--ühendan css faili-->
+    <script src="/javascript/menüü.js"></script> <!---ühendan javascript faili-->
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="wrapper">
+            <div class="navigation">
+                <img src="image/Fasters_logo.png" alt="Logo" , height="50 "> <!---logo importimine-->
+                <ul class="nav">
+                    <li> <a href="">Menüü</a></li> <!---töötav link-->
+                    <li><a href="">Tule tööle</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="banner">
+        <div class="wrapper">
+            <h2 class="title">Menüü</h2>
+            <div class="nav-wrapper">
+
+                <div class="sidebar" onclick="myFunction(event)"> <!---see on selle vasakupoolse valiku jaoks-->
+                    <a class="active" name="toidud">Top 10 Toidud</a>
+                    <a name="praed">Praed</a>
+                    <a name="rullid">Rullid</a>
+                    <a name="hamburgerid">Hamburgerid</a>
+                    <a name="kerged">Kerged eined</a>
+                    <a name="joogid">Joogid</a>
+                </div>
+
+                <div class="content" id="toidud"> <!---top 10 toitude ülevaade-->
+                    <div class="raam"> <!--See on selleks et oleks raam ümber-->
+                        <h3>ŠAŠLÕKK extra</h3>
+                        <h8>Šašlõkk ~300g, sibul, salat, kaste, friikartul</h8>
+                        <p>6,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Friikartulid 100g</h3>
+                        <p>1,20€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Juustuburger</h3>
+                        <h8>Kotlet, juust, marineeritud kurk, majonees, tomatikaste</h8>
+                        <p>2,20€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>ŠAŠLÕKK PREMIUM</h3>
+                        <h8>Šašlõkk ~150g, sibul, salat, kaste, friikartul</h8>
+                        <p>5,20€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Kana sulajuusturull</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, sulajuust, marineeritud kurk, tomat, salat, kaste,röstsibul</h8>
+                        <p>3,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>kana fitakirull</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, fitakijuust, marineeritud kurk, tomat, salat, kaste,röstsibul</h8>
+                        <p>3,50€ / 5,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>kananagitsad</h3>
+                        <h8>10tk, kaste</h8>
+                        <p>2,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>viineripraad</h3>
+                        <h8>Viinerid 4tk, salatm kaste, friikartul</h8>
+                        <p>2,90€</p>
+                    </div>
+                </div>
+                <div class="content" id="praed" hidden> <!---praede ülevaade-->
+                    <div class="raam">
+                        <h3>ŠAŠLÕKK extra</h3>
+                        <h8>Šašlõkk ~300g, sibul, salat, kaste, friikartul</h8>
+                        <p>6,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>ŠAŠLÕKK PREMIUM</h3>
+                        <h8>Šašlõkk ~150g, sibul, salat, kaste, friikartul</h8>
+                        <p>5,20€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>viineripraad</h3>
+                        <h8>Viinerid 4tk, salatm kaste, friikartul</h8>
+                        <p>2,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Šašlõkk armeenia</h3>
+                        <h8>Šašlõkk ~400g, sibul, salat, kaste, lavass</h8>
+                        <p>8,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Šašlõkk</h3>
+                        <h8>Šašlõkk ~1000g, sibul, salat, kaste, friikartul</h8>
+                        <p>4,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Šašlõkk värske salatiga</h3>
+                        <h8>sea- või kanašašlõkk ~150g, sibul, värskesalat, kaste</h8>
+                        <p>4,50€</p>
+                    </div>
+
+                </div>
+                <div class="content" id="rullid" hidden> <!--rullide ülevaade, hidden on selle jaoks et see peidaks selle ära kui teise valiku vajutada-->
+                    <div class="raam">
+                        <h3>Kana sulajuusturull</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, sulajuust, marineeritud kurk, tomat, salat, kaste,
+                            röstsibul</h8>
+                        <p>3,50€ / 5,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Kana fitakirull</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, fitakijuust, marineeritud kurk, tomat, salat, kaste,
+                            röstsibul</h8>
+                        <p>3,50€ / 5,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Kanarull</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, marineeritud kurk, tomat, salat, kaste, röstsibul</h8>
+                        <p>3,20€ / 4,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Kana peekonirull</h3>
+                        <h8>Paneeritud kanafilee, peekon, marineeritud kurk, tomat, sibul, salat, kaste, röstsibul</h8>
+                        <p>3,50€ / 5,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>ŠAŠLÕKIRULL</h3>
+                        <h8>Šašlõkk, marineeritud kurk, piprakaun, tomat, sibul, salat, kaste</h8>
+                        <p>3,90€ / 4,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Mexico rull</h3>
+                        <h8>Šašlõkk, jalapeno, marineeritud kurk, tomat, sibul, salat, terav kaste, röstsibul</h8>
+                        <p>3,90€ / 4,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Krõbekana special rull</h3>
+                        <h8>Krõbekana palad, fitakijuust, must ploom, kreeka pähkel, tomat, salat, kaste, röstsibul</h8>
+                        <p>5,90€ / 6,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Salatirull</h3>
+                        <h8>Värske salat, marineeritud kurk, piprakaun, tomat, sibul, salat, kaste, röstsibul</h8>
+                        <p>2,90€ / 3,90€</p>
+                    </div>
+                </div>
+
+                <div class="content" id="hamburgerid" hidden> <!---hamburgerite ülevaade-->
+                    <div class="raam">
+                        <h3>Juustuburger</h3>
+                        <h8>Kotlet, juust, marineeritud kurk, majonees, tomatikaste</h8>
+                        <p>2,20€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Megamiburger</h3>
+                        <h8>Kotlet, paneeritud kanafilee hakkšnitsel, friikartul, juust, marineeritud kurk, sibul, tomat,
+                            salat, kaste</h8>
+                        <p>4,90€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>kanaburger</h3>
+                        <h8>Paneeritud kanafilee hakkšnitsel, juust, marineeritud kurk, tomat, salat, kaste</h8>
+                        <p>3,20€ / 4,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>ŠAŠLÕKIBURGER</h3>
+                        <h8>Šašlõkk, juust, marineeritud kurk, tomat, sibul, salat, kaste</h8>
+                        <p>3,90€ / 5,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>Fastersburger</h3>
+                        <h8>Grillpihv, juust, kurgisalat, kaste</h8>
+                        <p>4,50€</p>
+                    </div>
+
+                </div>
+                <div class="content" id="kerged" hidden> <!---einete ülevaade-->
+                    <div class="raam">
+                        <h3>Friikartulid 100g</h3>
+                        <p>1,20€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>kananagitsad</h3>
+                        <h8>10tk, kaste</h8>
+                        <p>2,50€</p>
+                    </div>
+
+                    <div class="raam">
+                        <h3>ŠAŠLÕKIVIILUD SIBULAGA</h3>
+                        <h8>Šašlõkiviilud ~150g, ketšup, sibul, röstsibul</h8>
+                        <p>4,90€</p>
+                    </div>
+
+                </div>
+                <div class="content" id="joogid" hidden> <!--jookide ülevaade-->
+                    <div class="raam">
+                        <h3>Limonaad 0.5L</h3>
+                        <p>1,30€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>Valge klaar 0.5L</h3>
+                        <p>1,30€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>Vesi Aura gaasiga 0.5L</h3>
+                        <p>1,30€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>Sprite 0.5L</h3>
+                        <p>1,30€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>Mahl Aura Jõhvika 1L</h3>
+                        <p>3,00€</p>
+                    </div>
+                    <div class="raam">
+                        <h3>Vesi Aura gaasita 0.5L</h3>
+                        <p>1,30€</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="lõpp">
+            <h4>Fasters restoranid</h4>
+            <h5>Me armastame toitu, head toitu, just nagu sinagi !</h5>
+        </div>
+    </div>
+</body>
+
+</html>
